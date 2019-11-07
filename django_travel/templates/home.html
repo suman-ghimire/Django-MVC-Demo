@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+
+
+
+{%block content%}
+
+<body>
+<center> 
+    <h1> Welcome to my first app on Django... </h1>
+</center><br><br>
+
+    <form action="add" method='post'>
+
+    {% csrf_token %}
+    <center>
+        <b>Enter 1st number:</b><br><br>
+        <input type ="text" size="20" name ="num1"><br><br>
+        <b>Enter 2nd number:</b> <br><br>
+        <input type ="text" size="20" name ="num2"><br><br>
+        <input type="Submit">
+    </center> 
+
+    </form>
+
+    <footer><center>
+        <p> Created by {{name}} Ghimire </p>
+     </center></footer>
+
+ {% endblock %}
+
+    
+        
+   
+
+ </body>

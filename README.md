@@ -1,1 +1,1 @@
-# Django-MVC-TravelApp
+# Django-MVC-Demo
